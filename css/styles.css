@@ -1,0 +1,351 @@
+* body {
+  background-color: #ffffff;
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+  background-color: aliceblue;
+}
+
+/* Header styles*/
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #023047;
+}
+
+nav > a {
+  padding: 0px 40px;
+  font-weight: bolder;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+nav ul {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  background-color: #ef8354;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+a {
+  padding: 0px 10px;
+  color: #f9f9f9;
+  text-decoration: none;
+}
+/* Body stlyes */
+/* main section{
+  text-align: center;
+  
+} */
+main section {
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  margin: 15% 0;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #023047;
+  font-size: 15vw;
+  font-weight: 900;
+  padding-bottom: 22px;
+}
+
+section p {
+  font-family: "Open Sans", sans-serif;
+  color: #023047;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+input[type=button]:hover {
+  background-color: #216181;
+  border-radius: 3%;
+  border: none;
+}
+input[type=button] {
+  margin: 20px;
+  font-style: normal;
+  background-color: #023047;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+input[type="submit"] {
+  margin: 10px;
+  font-style: normal;
+  background-color: #b54839;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Page 2 Stlyes */
+body .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+  flex-direction: row-reverse;
+}
+
+.about > article {
+  padding: 0px 40px;
+  line-height: normal;
+  flex-direction: column-reverse;
+}
+img[alt="about Image"] {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  border-bottom-left-radius: 0%;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 9px 0px 0px 0px;
+  color: #023047;
+}
+
+.about p {
+  font-size: 1.1rem;
+  width: 90%;
+  color: #023047;
+}
+
+/* Contact Styles */
+#align {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.contact img {
+  margin: 11% 0px;
+  filter: drop-shadow(8px 8px 10px rgba(68, 68, 68, 0.336));
+}
+
+img[alt="Contact"] {
+  /* width: 30vw; */
+  padding: 0px 30px;
+  width: 50%;
+}
+
+/* Form-styles */
+input,
+textarea {
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #023047;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #216181;
+}
+
+fieldset {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #2161811f;
+}
+
+input[type=button] {
+  border-radius: 4px;
+  padding: 12px;
+  border: 2px solid #0f607d;
+  margin: 20px 0px;
+}
+
+/* Project Styles */
+#projects {
+  background-color: aliceblue;
+}
+#projects main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 00px;
+}
+
+#projects article {
+  text-align: center;
+  padding: 20px;
+}
+#projects main img {
+  width: 60%;
+  line-height: 30px;
+}
+#projects p {
+  line-height: 30px;
+  width: 50%;
+  margin: auto;
+}
+#projects h2 {
+  padding: 20px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    margin: 25px;
+  }
+  .contact img {
+    margin: 20px;
+    padding: 40px;
+  }
+  img[alt="Contact"] {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  body .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about > article {
+    margin-top: 30px;
+    padding: 0px;
+    line-height: normal;
+  }
+  img[alt="Contact"] {
+    border-radius: 50%;
+    /* width: 50%; */
+    width: 350px;
+    height: 350px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  header nav {
+    flex-direction: column;
+  }
+  nav > a {
+    padding: 20px;
+  }
+  nav ul {
+    border-radius: 0%;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+  }
+  nav ul > li {
+    padding: 10px;
+    border-bottom: 1px solid silver;
+  }
+  nav ul > li:last-child {
+    border-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 10rem;
+    width: fit-content;
+    text-align: center;
+    width: 100%;
+  }
+  body .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about > article {
+    margin-top: 30px;
+    padding: 0px;
+    line-height: normal;
+  }
+  #projects p {
+    width: 80%;
+  }
+  .contact {
+    flex-direction: column;
+    margin: 25px;
+  }
+  img[alt="Contact"] {
+    border-radius: 50%;
+    /* width: 50%; */
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 90%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  section p {
+    font-size: 15px;
+    text-align: center;
+    width: 90%;
+  }
+}
+body {
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #ee6055;
+	}
+	25% {
+		background: #60d394;
+	}
+	50% {
+		background: #aaf683;
+	}
+	75% {
+		background: #ffd97d;
+	}
+	100% {
+		background: #ff9b85;
+	}
+}
